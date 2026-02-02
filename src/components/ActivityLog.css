@@ -1,0 +1,51 @@
+.activity-log {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  background: rgba(15, 23, 42, 0.4);
+  border-top: 1px solid var(--border-light);
+  padding: 1rem;
+  margin-top: auto; /* Push to bottom if in flex container */
+  border-radius: 0 0 12px 12px;
+  max-height: 150px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse; /* Newest at bottom visually, but we want scroll stickiness */
+}
+
+.log-entry {
+  margin-bottom: 0.4rem;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.log-entry:first-child {
+  opacity: 1;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.log-timestamp {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.log-agent {
+  color: var(--accent);
+}
+
+/* Scrollbar styling */
+.activity-log::-webkit-scrollbar {
+  width: 4px;
+}
+
+.activity-log::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+.activity-log::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 2px;
+}
