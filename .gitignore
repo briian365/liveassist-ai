@@ -15,6 +15,7 @@ dist-ssr
 # Environment variables (API keys)
 .env
 .env.local
+SUBMISSION.md
 
 # Editor directories and files
 .vscode/*
