@@ -37,13 +37,13 @@ The sidebar runs **four specialized Nano-Agents** in parallel:
 ### Screenshots
 
 #### Typing "refund" triggers instant KB retrieval
-![Algolia search in action](INSERT_SCREENSHOT_URL_HERE)
+![Algolia search in action](docs/screenshot_refund.png)
 
 #### Order ID detection shows live tracking widget
-![Order widget](INSERT_SCREENSHOT_URL_HERE)
+![Order widget](docs/screenshot_order.png)
 
 #### Sentiment detection escalates priority
-![Priority support](INSERT_SCREENSHOT_URL_HERE)
+![Priority support](docs/screenshot_sentiment.png)
 
 ---
 
